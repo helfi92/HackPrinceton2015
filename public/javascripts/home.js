@@ -1,10 +1,8 @@
 $(document).ready(function() {
     $("#myTags").tagit({
     	afterTagAdded: function(event, ui){
-    		var tags = $("#myTags").tagit("assignedTags");
-    		//formatSearchTerms(tags);
-    		console.log(ui);
-    		console.log(event);
+    		formatSearchTerms();
+    		
 
     	}
     });
