@@ -6,6 +6,9 @@ body {
 a {
   color: #00B7FF;
 }
+.logo{
+	background:url("walmart_logo.png")
+}
 .walmart-color{
 	 background-color:#79B9E7;
 }
@@ -22,14 +25,19 @@ a {
 
 }
 .shirt{
-	height:200px;
+	height:180px;
 	width: 150px;
 	margin-top:50px;
+}
+.pants{
+	height:200px;
+	width: 150px;
+	margin-top:230px;
 }
 .shoe-left{
 	height:100px;
 	width: 150px;
-	margin-top:300px;
+	margin-top:400px;
 	margin-left:-200px;
 }
 .grow { 
