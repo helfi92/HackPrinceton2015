@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
   	var options = {
 	  host: "api.walmartlabs.com",
 	  port: 80,
-	  path: '/v1/search?query=shoes+'+ searchTerms + '&format=json&apiKey=8dq9cz3zggzevwma8bc842za',
+	  path: '/v1/search?query=fashion+'+ searchTerms + '&format=json&apiKey=8dq9cz3zggzevwma8bc842za',
 	  method: 'GET',
 	  json: true
 	};

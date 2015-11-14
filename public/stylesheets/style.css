@@ -11,19 +11,25 @@ a {
 }
 
 .manekin{
-	height: 600px;
+	height: 500px;
 
 }
 .hat{
 	    
-	    height:150px;
-	    width: 250px;
+	    height:100px;
+	    width: 150px;
+	    margin-top:-80px;
 
 }
 .shirt{
-
+	height:200px;
+	width: 150px;
+	margin-top:50px;
 }
-.shoe{
-
+.shoe-left{
+	height:100px;
+	width: 150px;
+	margin-top:300px;
+	margin-left:-200px;
 }
 
