@@ -2,15 +2,27 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="/public/stylesheets/jquery.tagit.css">
 <script src="/public/javascripts/home.js"></script>
+<script src="/public/javascripts/tag-it.min.js"></script>
+
 </head>
 <body>
 
 <h1>My First Heading</h1>
 <div id="demo">asdas</div>
 <input id="search">
-<button onclick="loadImage()">Load Image</button>
+<button onclick="formatSearchTerms()">Load Image</button>
 <p>My first paragraph.</p>
 
+
+<ul id="myTags">
+    <!-- Existing list items will be pre-added to the tags -->
+    <li>Tag1</li>
+    <li>Tag2</li>
+</ul>
 </body>
 </html>

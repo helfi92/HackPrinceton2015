@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
  	console.log('color is: ',req.query.searchTerms);
 
  	var searchTerms = req.query.searchTerms;
- 	searchTerms = JSON.stringify(searchTerms); 
+ 	//searchTerms = JSON.stringify(searchTerms); 
   	var url = "http://api.walmartlabs.com/v1/search?query=bed&format=json&apiKey=8dq9cz3zggzevwma8bc842za";
   	var options = {
 	  host: "api.walmartlabs.com",

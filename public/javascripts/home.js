@@ -1,5 +1,18 @@
+$(document).ready(function() {
+    $("#myTags").tagit({
+    	afterTagAdded: function(event, ui){
+    		var tags = $("#myTags").tagit("assignedTags");
+    		//formatSearchTerms(tags);
+    		console.log(ui);
+    		console.log(event);
+
+    	}
+    });
+});
+
+
 function loadImage(searchTerms) {
-	var searchTerms = $("#search").val() ;
+	//var searchTerms = $("#search").val() ;
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -14,6 +27,17 @@ function loadImage(searchTerms) {
 
 }
 
-function formatSearchTerms(searchTerms){
-	
+function formatSearchTerms(){
+	var tagArray = $("#myTags").tagit("assignedTags");
+	var plus = encodeURIComponent('+'); 
+	var formmatedString = "";
+	for( var i = 0 ; i < tagArray.length ; i++){
+		if(formmatedString.length == 0){
+			formmatedString = tagArray[i];
+		}else{
+			formmatedString += plus + tagArray[i]; 
+		}
+	}
+	console.log(formmatedString);
+	loadImage(formmatedString);
 }
