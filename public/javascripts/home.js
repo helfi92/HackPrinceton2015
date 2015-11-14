@@ -1,4 +1,5 @@
-function loadImage() {
+function loadImage(searchTerms) {
+	var searchTerms = $("#search").val() ;
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -8,6 +9,11 @@ function loadImage() {
       //document.getElementById("demo").innerHTML = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "/api", true);
+  xhttp.open("GET", "/api?searchTerms="+searchTerms, true);
   xhttp.send();
+
+}
+
+function formatSearchTerms(searchTerms){
+	
 }
