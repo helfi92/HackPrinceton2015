@@ -29,7 +29,7 @@ router.get('/', function(req, res, next) {
 	  response.setEncoding('utf8');
 	  response.on('data', function (data) {
 	    //console.log('BODY: ' + data);
-	    //console.log('BODY: ' + data);
+	    console.log('BODY: ' + data);
 	     temp += data;
 	    
 	  });
@@ -39,7 +39,7 @@ router.get('/', function(req, res, next) {
     	console.log(temp);
   	  });
 
-	});
+	}).end();
 	
 });
 
