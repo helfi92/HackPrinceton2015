@@ -21,7 +21,7 @@
 <body ng-app="myApp" ng-controller="homeController">
 	<div class="walmart-color">
 		<div class="container">
-			<h1 class="logo">Logo here </h1>
+			<!-- <h1 class="logo">Logo here </h1> -->
 			<h2>Started from the bottom</h2>
 
 
@@ -32,56 +32,47 @@
 		</div>
 	</div>
 	<div style="height:100px;" class="col-xs-6">
-				{{section}}
 				<div style="text-align: center; margin-top: 25px;">
                     <i class="fa fa-thumbs-up fa-5x grow" style="color: MediumTurquoise; margin-right: 55px;"></i>
                     <i class="fa fa-thumbs-down fa-5x grow" style="color: Crimson; margin-left: 55px;"></i>
                 </div>
 				<div class="container" style="margin-top:110px;">
-				<div style="position:relative;text-align: center;" class="col-xs-6">
+					<div style="position:relative;text-align: center;" class="col-xs-6">
  
-					<div class="col-xs-6">
-						<img class="hat" src="http://i.walmartimages.com/i/mp/I6/1O/MZ/XF/Z1/I61OMZXFZ1636_P646661_100X100.jpg">
-					<img  class="manekin" src="/public/images/Body.png">
-					<div  style="position:absolute;top:0;width:100%;left:0;">
-						<img  ng-click="switchSection(0)" class="hat" ng-src="{{imageHat}}"></button>
-						<div ng-show="hatSection == true" style="margin-top:-80px;"><i style="margin-left:400px;" class="fa fa-arrow-left fa-4x"></i></div>
-					</div>
-					<div  style="position:absolute;top:100px;width:100%;left:0;">
-						<img ng-click="switchSection(1)" class="shirt" ng-src="{{imageShirt}}">
-						<div ng-show="shirtSection" style="margin-top:-120px;"><i style="margin-left:380px;" class="fa fa-arrow-left fa-4x"></i></div>
-					</div>
-					<div style="position:absolute;top:100px;width:100%;height:200px;left:0;">
-                                                <img class="pants" src="http://i.walmartimages.com/i/p/00/71/66/05/11/0071660511934_Color_Black_SW_100X100.jpg">
-                                        </div>
-					<div  style="position:relative;width:100%;left:0;">
-						<img ng-click="switchSection(2)" class="shoe-left" ng-src="{{imageShoe}}">
-						<div ng-show="shoeSection" style="margin-top:-80px;"><i style="margin-left:400px;" class="fa fa-arrow-left fa-4x"></i></div>
-					</div>
 					
-				</div>
-				
-				<div class="container">
-					
+						
+						<img  class="manekin" src="/public/images/Body.png">
+						<div  style="position:absolute;top:0;width:100%;left:0;">
+							<img  ng-click="switchSection(0)" class="hat" ng-src="{{imageHat}}"></button>
+							<div ng-show="hatSection == true" style="margin-top:-80px;"><i style="margin-left:400px;" class="fa fa-arrow-left fa-4x"></i></div>
+						</div>
+						<div  style="position:absolute;top:100px;width:100%;left:0;">
+							<img ng-click="switchSection(1)" class="shirt" ng-src="{{imageShirt}}">
+							<div ng-show="shirtSection" style="margin-top:-120px;"><i style="margin-left:380px;" class="fa fa-arrow-left fa-4x"></i></div>
+						</div>
+							<!-- <div style="position:absolute;top:100px;width:100%;height:200px;left:0;">
+		                                                <img class="pants" src="http://i.walmartimages.com/i/p/00/71/66/05/11/0071660511934_Color_Black_SW_100X100.jpg">
+		                                        </div> -->
+						<div  style="position:relative;width:100%;left:0;">
+							<img ng-click="switchSection(2)" class="shoe-left" ng-src="{{imageShoe}}">
+							<div ng-show="shoeSection" style="margin-top:-80px;"><i style="margin-left:400px;" class="fa fa-arrow-left fa-4x"></i></div>
+						</div>
+							
+					</div>
+						
+						<div class="container">
+							
+						</div>
+
 				</div>
 
-
-			<!-- 	<div style="text-align: center;position: relative;">
-					<img class="manekin" src="/public/images/Body.png">
-					<div style="position:absolute;top:0;width:100%;height:200px;left:0;">
-						<img class="hat" src="http://i.walmartimages.com/i/mp/I6/1O/MZ/XF/Z1/I61OMZXFZ1636_P646661_100X100.jpg">
-					</div>
-					<div style="position:absolute;">
-						<img class="shirt" src="http://i.walmartimages.com/i/mp/00/70/21/05/18/0070210518121_P573501_100X100.jpg">
-					</div>
-				</div> -->
-			</div>
 	</div>
-	<div style="background-color:red;" class="col-xs-6 text-center">
+	<div style="" class="col-xs-6 text-center">
 		<div style="padding:10px;" ng-repeat="item in list track by $index">
 			<img ng-click="selectItem($index)" ng-src="{{item.thumbnailImage}}">
 		</div>
 	</div>
+	
 
 
 	<script src="/public/javascripts/homeController.js"></script>
