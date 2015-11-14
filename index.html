@@ -86,7 +86,7 @@
 			</div>
 	</div>
 	<div style="background-color:red;" class="col-xs-6 text-center">
-		<div ng-repeat="item in list track by $index">
+		<div style="padding:10px;" ng-repeat="item in list track by $index">
 			<img ng-click="selectItem($index)" ng-src="{{item.thumbnailImage}}">
 		</div>
 	</div>
