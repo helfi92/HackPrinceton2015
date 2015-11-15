@@ -4,6 +4,9 @@ body {
 a {
   color: #00B7FF;
 }
+h1, h2 {
+    font-family: "Droid Sans", Helvetica, Arial,sans-serif;
+}
 .walmart-color{
 	 background-color:#007dc6;
 }
@@ -51,7 +54,6 @@ a {
    font-size: 18px;
    color: #FFF;
 }
- 
 .btnz:hover {
    color: #efefef;
 }

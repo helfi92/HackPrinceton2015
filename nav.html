@@ -4,14 +4,14 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="loginModalLabel">Login</h4>
+        <h4 class="modal-title" style="font-family:'Droid Sans'" id="loginModalLabel">Login</h4>
       </div>
       <div class="modal-body">
-       	<input placeholder="E-mail" ng-model="emailLogin">
-      	<input placeholder="Password" ng-model="passwordLogin" type="password">
+       	<input placeholder="E-mail" ng-model="emailLogin" style="font-family:'Droid Sans'">
+      	<input placeholder="Password" ng-model="passwordLogin" type="password" style="font-family:'Droid Sans'">
       </div>
       <div class="modal-footer">
-        <button ng-click="login(emailLogin,passwordLogin)" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+        <button ng-click="login(emailLogin,passwordLogin)" type="button" class="btn btn-primary" data-dismiss="modal" style="font-family:'Droid Sans'">Login</button>
       </div>
     </div>
   </div>
@@ -23,23 +23,19 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="signupModalLabel">Sign Up</h4>
+        <h4 class="modal-title" id="signupModalLabel" style="font-family:'Droid Sans'">Sign Up</h4>
       </div>
       <div class="modal-body">
-       	<input placeholder="Full Name" ng-model="firstname">
-      	<input placeholder="E-mail" ng-model="emailSignup">
-      	<input placeholder="Password" ng-model="passwordSignup" type="password">
+       	<input placeholder="Full Name" ng-model="firstname" style="font-family:'Droid Sans'">
+      	<input placeholder="E-mail" ng-model="emailSignup" style="font-family:'Droid Sans'">
+      	<input placeholder="Password" ng-model="passwordSignup" type="password" style="font-family:'Droid Sans'">
       </div>
       <div class="modal-footer">
-        <button ng-click="createNewAccount(emailSignup,passwordSignup)" type="button" class="btn btn-primary" data-dismiss="modal">Sign Up</button>
+        <button ng-click="createNewAccount(emailSignup,passwordSignup)" type="button" class="btn btn-primary" data-dismiss="modal" style="font-family:'Droid Sans'">Sign Up</button>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
 
 <div style="height:80px;background-color:white;width:100%;padding:20px 0;">
 	<div style="height:100%;"ng-show="$parent.user">
@@ -47,7 +43,7 @@
             <img style="height: 20px;position: absolute;top: 0;margin-left: 191.5px;margin-top: 15px;"src="/public/images/walwear_logo.png">
         </div>
 		<div class="col-xs-4 text-center" style="height:100%;"></div>
-		<div class="col-xs-4" style="height:100%;"><button ng-click="logout()" class="btn btn-primary pull-right">Logout</button></div>
+		<div class="col-xs-4" style="height:100%;"><button ng-click="logout()" class="btn btn-primary pull-right" c>Logout</button></div>
 
 	</div>
 	<div style="height:100%;position: relative;" ng-hide="$parent.user" style="text-align: center;">
@@ -56,8 +52,8 @@
         </div>
 		<div style="height:100%;" class="col-xs-4 text-center"></div>
 		<div style="height:100%;" class="col-xs-4">
-			<div class="pull-right"><button data-toggle="modal" data-target="#loginModal" class="btn btn-primary">Login Now</button>
-			<button data-toggle="modal" data-target="#signupModal" class="btn btn-primary">Sign Up Now</button></div>
+			<div class="pull-right"><button data-toggle="modal" data-target="#loginModal" class="btn btn-primary" style="font-family:'Droid Sans'">Login Now</button>
+			<button data-toggle="modal" data-target="#signupModal" class="btn btn-primary" style="font-family:'Droid Sans'">Sign Up Now</button></div>
 		</div>
 	</div>
 	
