@@ -1,4 +1,4 @@
-app.controller('homeController',['$scope','$timeout', function($scope,$timeout){
+app.controller('homeController',['$scope','$timeout','$document', function($scope,$timeout,$document){
 	$scope.hatSection = false;
 	$scope.shirtSection = false;
 	$scope.shoeSection = false;
@@ -33,14 +33,20 @@ app.controller('homeController',['$scope','$timeout', function($scope,$timeout){
 
     	}
     }
-
-	$(document).ready(function() {
-	    $("#myTags").tagit({
+    $timeout(function(){
+		$("#myTags").tagit({
 	    	afterTagAdded: function(event, ui){
 	    		formatSearchTerms();
 	    	}
 	    });
-	});
+    },1000)
+	// $(document).ready(function() {
+	//     $("#myTags").tagit({
+	//     	afterTagAdded: function(event, ui){
+	//     		formatSearchTerms();
+	//     	}
+	//     });
+	// });
 
 	function loadImage(searchTerms) {
 		//var searchTerms = $("#search").val() ;
