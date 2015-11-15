@@ -4,6 +4,11 @@ app.controller('homeController',['$scope','$timeout','$document', function($scop
 	$scope.shoeSection = false;
 	$scope.section = 0;
     $scope.list = [];
+    $scope.like = 0;
+    $scope.increaseLike = function(){
+    	var likes = $scope.like;
+    	$scope.like = likes + 1;
+    }
 
     $scope.selectItem = function(index){
     	var image = $scope.list[index].thumbnailImage;
