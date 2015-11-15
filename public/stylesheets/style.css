@@ -6,12 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
 .walmart-color{
-	 background-color:#79B9E7;
+	 background-color:#007dc6;
 }
 
 .manekin{
-	height: 500px;
+	height: 400px;
 
 }
 .hat{
@@ -22,14 +23,20 @@ a {
 
 }
 .shirt{
-	height:200px;
+
+	height:150px;
 	width: 150px;
 	margin-top:50px;
+}
+.pants{
+	height:200px;
+	width: 150px;
+	margin-top:230px;
 }
 .shoe-left{
 	height:100px;
 	width: 150px;
-	margin-top:300px;
+	margin-top:-100px;
 	margin-left:-200px;
 }
 .grow { 

@@ -1,11 +1,36 @@
 app.controller('homeController',['$scope','$timeout', function($scope,$timeout){
+	$scope.hatSection = false;
+	$scope.shirtSection = false;
+	$scope.shoeSection = false;
 	$scope.section = 0;
     $scope.list = [];
 
     $scope.selectItem = function(index){
+    	var image = $scope.list[index].thumbnailImage;
     	if($scope.section == 0){
-    		console.log($scope.list[index].thumbnailImage);
-    		$scope.imageHat = $scope.list[index].thumbnailImage;
+    		$scope.imageHat = image;
+    	}else if($scope.section == 1){
+    		$scope.imageShirt = image;
+    	}else if($scope.section == 2){
+    		$scope.imageShoe = image;
+    	}
+    }
+
+    $scope.switchSection = function(section){
+    	$scope.section  = section;
+    	if($scope.section == 0){
+    		$scope.hatSection = true;
+    		$scope.shirtSection = false;
+    		$scope.shoeSection = false;
+    	}else if($scope.section == 1){
+    		$scope.hatSection = false;
+    		$scope.shirtSection = true;
+    		$scope.shoeSection = false;
+    	}else if($scope.section == 2){
+    		$scope.hatSection = false;
+    		$scope.shirtSection = false;
+    		$scope.shoeSection = true;
+
     	}
     }
 
