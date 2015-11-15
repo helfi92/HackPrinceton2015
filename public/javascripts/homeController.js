@@ -1,4 +1,4 @@
-app.controller('homeController',['$scope', '$rootScope', '$timeout','$document', function($scope, $rootScope, $timeout,$document){
+app.controller('homeController',['$scope', '$rootScope', '$timeout','$interval', function($scope, $rootScope, $timeout,$interval){
 	$scope.hatSection = false;
 	$scope.shirtSection = false;
 	$scope.shoeSection = false;
