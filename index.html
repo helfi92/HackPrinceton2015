@@ -20,9 +20,9 @@
 </head>
 <body ng-app="myApp" ng-controller="homeController">
 	<div class="walmart-color">
+		<img style="height:50px;"src="/public/images/walmart_logo.png">
 		<div class="container">
-			<!-- <h1 class="logo">Logo here </h1> -->
-			<h2>Started from the bottom</h2>
+			<h2 style="color:white;">Started from the bottom</h2>
 
 
 			<ul id="myTags">
@@ -67,9 +67,11 @@
 				</div>
 
 	</div>
-	<div style="" class="col-xs-6 text-center">
+	<div style="max-height:400px;margin-top:25px;overflow-y:auto;" class="col-xs-6 text-center">
+		<h1>Catalog</h1>
 		<div style="padding:10px;" ng-repeat="item in list track by $index">
 			<img ng-click="selectItem($index)" ng-src="{{item.thumbnailImage}}">
+			<div style="padding: 10px 40px 0px 40px;">{{item.name}}</div>
 		</div>
 	</div>
 	
