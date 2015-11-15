@@ -2,11 +2,12 @@ app.controller('homeController',['$scope', '$rootScope', '$timeout','$document',
 	$scope.hatSection = false;
 	$scope.shirtSection = false;
 	$scope.shoeSection = false;
+    $scope.toggleAnimate = true;
     $scope.liked = false;
 	$scope.section = 0;
     $scope.list = [];
     $scope.numLikes = 0;
-    
+
     $scope.increaseLike = function(){
     	if(!$scope.liked && $rootScope.user) {
             $scope.numLikes += 1;
@@ -17,6 +18,11 @@ app.controller('homeController',['$scope', '$rootScope', '$timeout','$document',
         }
     }
 
+    var intervalAnimate = $interval(function() {
+            console.log('boom', $scope.toggleAnimate);
+            $scope.toggleAnimate = !$scope.toggleAnimate;
+    }, 2000);
+
     $scope.selectItem = function(index){
     	var image = $scope.list[index].thumbnailImage;
     	if($scope.section == 0){
@@ -25,24 +31,34 @@ app.controller('homeController',['$scope', '$rootScope', '$timeout','$document',
     		$scope.imageShirt = image;
     	}else if($scope.section == 2){
     		$scope.imageShoe = image;
+    	}else if($scope.section == 3){
+    		$scope.imagePant = image;
     	}
     }
 
     $scope.switchSection = function(section){
+    	console.log(section);
     	$scope.section  = section;
     	if($scope.section == 0){
     		$scope.hatSection = true;
     		$scope.shirtSection = false;
     		$scope.shoeSection = false;
+    		$scope.pantSection = false;
     	}else if($scope.section == 1){
     		$scope.hatSection = false;
     		$scope.shirtSection = true;
     		$scope.shoeSection = false;
+    		$scope.pantSection = false;
     	}else if($scope.section == 2){
     		$scope.hatSection = false;
     		$scope.shirtSection = false;
     		$scope.shoeSection = true;
-
+    		$scope.pantSection = false;
+    	}else if($scope.section == 3){
+    		$scope.hatSection = false;
+    		$scope.shirtSection = false;
+    		$scope.shoeSection = false;
+    		$scope.pantSection = true;
     	}
     }
     $timeout(function(){
