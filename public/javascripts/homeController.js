@@ -18,10 +18,7 @@ app.controller('homeController',['$scope', '$rootScope', '$timeout','$interval',
         }
     }
 
-    var intervalAnimate = $interval(function() {
-            console.log('boom', $scope.toggleAnimate);
-            $scope.toggleAnimate = !$scope.toggleAnimate;
-    }, 2000);
+    
 
     $scope.selectItem = function(index){
     	var image = $scope.list[index].thumbnailImage;
