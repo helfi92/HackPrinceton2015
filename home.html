@@ -9,7 +9,7 @@
             </div>
     </div>
 <div class="container">  	
-	<div style="height:100px;" class="col-xs-6">
+	<div style="height:100px;padding-left:0;" class="col-xs-6">
         <div>
             <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"style="position: absolute;top: 45px;" class="btnz share facebook" href="#"><i class="fa fa-facebook"></i> Share</a>
         </div>    
@@ -49,9 +49,9 @@
 
 	</div>
 	
-	<div style="max-height:600px;margin-top:20px;overflow-y:auto;background-color: #007dc6;border:5px solid #ffc120;border-radius: 5%;" class="col-xs-6 text-center">
+	<div style="max-height:600px;margin-top:10px;overflow-y:auto;background-color: #007dc6;border:5px solid #ffc120;" class="col-xs-6 text-center">
         <h1 style="color:white; font-family:'Lato',sans-serif;">Catalog</h1>
-            <div style="margin-top:10px;background-color:white;font-family:'Lato',sans-serif;border-radius:15px;border-color:color:#007dc6;"ng-repeat="item in list track by $index">
+            <div style="margin-top:10px;background-color:white;font-family:'Lato',sans-serif;border-color:color:#007dc6;"ng-repeat="item in list track by $index">
                 <img class="item" ng-click="selectItem($index)" ng-src="{{item.thumbnailImage}}">
                 <div style="padding: 10px 40px 0px 40px;">{{item.name}}</div>
             </div>
