@@ -1,13 +1,20 @@
-app.controller('homeController',['$scope','$timeout','$document', function($scope,$timeout,$document){
+app.controller('homeController',['$scope', '$rootScope', '$timeout','$document', function($scope, $rootScope, $timeout,$document){
 	$scope.hatSection = false;
 	$scope.shirtSection = false;
 	$scope.shoeSection = false;
+    $scope.liked = false;
 	$scope.section = 0;
     $scope.list = [];
-    $scope.like = 0;
+    $scope.numLikes = 0;
+    
     $scope.increaseLike = function(){
-    	var likes = $scope.like;
-    	$scope.like = likes + 1;
+    	if(!$scope.liked && $rootScope.user) {
+            $scope.numLikes += 1;
+            $scope.liked = true;
+        }
+        else {
+            // Error message on webpage
+        }
     }
 
     $scope.selectItem = function(index){
