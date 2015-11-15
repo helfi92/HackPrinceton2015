@@ -1,6 +1,6 @@
     <div class="walmart-color">
             <div class="container">
-                <h1 style="color:white;">Started from the bottom</h1>
+                <h2 style="color:white;">Design and Earn</h2>
                 <ul id="myTags">
                     <!-- Existing list items will be pre-added to the tags -->
                     <!--<li>Tag1</li>-->
@@ -10,8 +10,8 @@
 	
 	<div style="height:100px;" class="col-xs-6">
 				<div style="text-align: center; margin-top: 25px;">
-                    <i class="fa fa-thumbs-up fa-5x grow" style="color: MediumTurquoise; margin-right: 55px;"></i>
-                    <div style="margin-top: 10px;position: relative;bottom: 55px;left: 30px;"><label style="font-weight:100;font-size:30px;">49</label></div>
+                    <i ng-click="increaseLike()" class="fa fa-thumbs-up fa-5x grow" style="color: MediumTurquoise; margin-right: 55px;"></i>
+                    <div style="margin-top: 10px;position: relative;bottom: 55px;left: 30px;"><label style="font-weight:100;font-size:30px;">{{like}}</label></div>
                 </div>
                 <div><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"style="position: absolute;top: 45px;" class="btnz share facebook" href="#"><i class="fa fa-facebook"></i> Share</a></div>
          
@@ -46,11 +46,12 @@
 				</div>
 
 	</div>
-	<div style="max-height:600px;margin-top:50px;overflow-y:auto;border:5px solid #ffc120" class="col-xs-6 text-center">
-		<h1 style="color:#007dc6;">Catalog</h1>
-		<div style="padding:10px;" ng-repeat="item in list track by $index">
-			<img ng-click="selectItem($index)" ng-src="{{item.thumbnailImage}}">
-			<div style="padding: 10px 40px 0px 40px;">{{item.name}}</div>
-		</div>
-	</div>
+	
+	<div style="max-height:600px;margin-top:50px;overflow-y:auto;background-color: #007dc6;border:5px solid #ffc120;border-radius: 5%;" class="col-xs-6 text-center">
+        <h1 style="color:white; font-family:'Lato',sans-serif;">Catalog</h1>
+            <div style="margin-top:10px;background-color:white;font-family:'Lato',sans-serif;border-radius:15px;border-color:color:#007dc6;"ng-repeat="item in list track by $index">
+                <img class="item" ng-click="selectItem($index)" ng-src="{{item.thumbnailImage}}">
+                <div style="padding: 10px 40px 0px 40px;">{{item.name}}</div>
+            </div>
+    </div>
 	
