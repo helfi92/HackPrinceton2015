@@ -5,7 +5,7 @@ app.factory("Auth",['$firebaseAuth','$rootScope',function($firebaseAuth,$rootSco
 	    authRef.$onAuth(function(authData){
 	      authData = authData;
 	      $rootScope.user = authData;
-	       console.log('user is: ', authData);
+	       //console.log('user is: ', authData);
 	    });
         var authObject = {
             authData : authData,

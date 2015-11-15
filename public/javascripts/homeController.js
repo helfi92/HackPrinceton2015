@@ -34,7 +34,7 @@ app.controller('homeController',['$scope', '$rootScope', '$timeout','$interval',
     }
 
     $scope.switchSection = function(section){
-    	console.log(section);
+    	//console.log(section);
     	$scope.section  = section;
     	if($scope.section == 0){
     		$scope.hatSection = true;
@@ -82,8 +82,8 @@ app.controller('homeController',['$scope', '$rootScope', '$timeout','$interval',
 	     	var json = JSON.parse(xhttp.responseText); 
 	     	$scope.list = json.items;
 	     	$timeout();
-	     	console.log('list is: ' + $scope.list);
-	     	console.log(xhttp.responseText);
+	     	//console.log('list is: ' + $scope.list);
+	     	//console.log(xhttp.responseText);
 	      //document.getElementById("demo").innerHTML = xhttp.responseText;
 	    }
 	  };
@@ -103,7 +103,7 @@ app.controller('homeController',['$scope', '$rootScope', '$timeout','$interval',
 				formmatedString += plus + tagArray[i]; 
 			}
 		}
-		console.log(formmatedString);
+		//console.log(formmatedString);
 		 loadImage(formmatedString);
 	}
 }]);

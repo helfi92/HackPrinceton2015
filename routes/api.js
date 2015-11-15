@@ -13,11 +13,11 @@ var apiKey = '8dq9cz3zggzevwma8bc842za';
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
- 	console.log('color is: ',req.query.searchTerms);
+ 	//console.log('query is: ',req.query.searchTerms);
 
  	var searchTerms = req.query.searchTerms;
  	//searchTerms = JSON.stringify(searchTerms); 
-  	var url = "http://api.walmartlabs.com/v1/search?query=bed&format=json&apiKey=8dq9cz3zggzevwma8bc842za";
+  	//var url = "http://api.walmartlabs.com/v1/search?query=bed&format=json&apiKey=8dq9cz3zggzevwma8bc842za";
   	var options = {
 	  host: "api.walmartlabs.com",
 	  port: 80,
@@ -31,8 +31,8 @@ router.get('/', function(req, res, next) {
   	
 
 	http.request(options, function(response) {
-	  console.log('STATUS: ' + response.statusCode);
-	  console.log('HEADERS: ' + JSON.stringify(res.headers));
+	  // console.log('STATUS: ' + response.statusCode);
+	  // console.log('HEADERS: ' + JSON.stringify(res.headers));
 	  response.setEncoding('utf8');
 	  response.on('data', function (data) {
 	    //console.log('BODY: ' + data);
