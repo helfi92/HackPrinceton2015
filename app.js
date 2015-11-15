@@ -34,7 +34,7 @@ app.use(cookieParser());
 console.log('path name is: ', __dirname);
 //app.use(express.static(path.join(__dirname, 'public')));
 app.use('/public', express.static(path.join(__dirname, 'public')));
-
+app.use('/', express.static(path.join(__dirname, '')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/api', api);

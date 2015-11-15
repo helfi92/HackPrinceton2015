@@ -1,8 +1,5 @@
-var app = angular.module('myApp', []);
 app.controller('homeController',['$scope','$timeout', function($scope,$timeout){
-
 	$scope.section = 0;
-
     $scope.list = [];
 
     $scope.selectItem = function(index){
@@ -12,18 +9,13 @@ app.controller('homeController',['$scope','$timeout', function($scope,$timeout){
     	}
     }
 
-
-
 	$(document).ready(function() {
 	    $("#myTags").tagit({
 	    	afterTagAdded: function(event, ui){
 	    		formatSearchTerms();
-	    		
-
 	    	}
 	    });
 	});
-
 
 	function loadImage(searchTerms) {
 		//var searchTerms = $("#search").val() ;
@@ -58,9 +50,4 @@ app.controller('homeController',['$scope','$timeout', function($scope,$timeout){
 		console.log(formmatedString);
 		 loadImage(formmatedString);
 	}
-
-
-
-
-
 }]);
