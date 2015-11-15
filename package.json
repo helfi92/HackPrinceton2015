@@ -9,12 +9,7 @@
 		"morgan": "~1.6.1",
 		"serve-favicon": "~2.3.0"
 	},
-	"folders":
-	[
-		{
-			"path": "/Users/jonathanyang/HackPrinceton2015"
-		}
-	],
+	
 	"name": "walmart",
 	"private": true,
 	"scripts":
