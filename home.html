@@ -1,13 +1,14 @@
+ 
     <div class="walmart-color">
             <div class="container">
-                <h2 style="color:white;">Design and Earn</h2>
+                <h2 style="color:white;margin-top:10px">Design and Earn</h2>
                 <ul id="myTags">
                     <!-- Existing list items will be pre-added to the tags -->
                     <!--<li>Tag1</li>-->
                 </ul>
             </div>
     </div>
-	
+<div class="container">  	
 	<div style="height:100px;" class="col-xs-6">
 				<div style="text-align: center; margin-top: 25px;">
                     <i ng-click="increaseLike()" class="fa fa-thumbs-up fa-5x grow" style="color: MediumTurquoise; margin-right: 55px;"></i>
@@ -20,7 +21,7 @@
  
 					
 						
-						<img  class="manekin" src="/public/images/Body.png">
+						<img  class="manekin animated lightSpeedIn" src="/public/images/Body.png">
 						<div  style="position:absolute;top:0;width:100%;left:0;">
 							<img  ng-click="switchSection(0)" class="hat" ng-src="{{imageHat}}"></button>
 							<div ng-show="hatSection == true" style="margin-top:-80px;"><i style="margin-left:400px;" class="fa fa-arrow-left fa-4x"></i></div>
@@ -47,7 +48,7 @@
 
 	</div>
 	
-	<div style="max-height:600px;margin-top:50px;overflow-y:auto;background-color: #007dc6;border:5px solid #ffc120;border-radius: 5%;" class="col-xs-6 text-center">
+	<div style="max-height:600px;margin-top:20px;overflow-y:auto;background-color: #007dc6;border:5px solid #ffc120;border-radius: 5%;" class="col-xs-6 text-center">
         <h1 style="color:white; font-family:'Lato',sans-serif;">Catalog</h1>
             <div style="margin-top:10px;background-color:white;font-family:'Lato',sans-serif;border-radius:15px;border-color:color:#007dc6;"ng-repeat="item in list track by $index">
                 <img class="item" ng-click="selectItem($index)" ng-src="{{item.thumbnailImage}}">
@@ -55,3 +56,4 @@
             </div>
     </div>
 	
+</div>

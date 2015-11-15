@@ -44,7 +44,7 @@ app.controller('homeController',['$scope','$timeout','$document', function($scop
 	    		formatSearchTerms();
 	    	}
 	    });
-    },1000)
+    },100)
 	// $(document).ready(function() {
 	//     $("#myTags").tagit({
 	//     	afterTagAdded: function(event, ui){
