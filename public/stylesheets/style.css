@@ -41,3 +41,27 @@ a {
 .grow:hover { 
     transform: scale(1.2);
 }
+.btnz {
+   display: block;
+   float: left;
+   padding: 10px 15px;
+   border:none;
+   background-color: #ececec;
+   text-decoration: none;
+   font-size: 18px;
+   color: #FFF;
+}
+ 
+.btnz:hover {
+   color: #efefef;
+}
+.facebook {
+   background-color: #3b5998;
+}
+a{
+	text-decoration: none !important;
+}
+a:visited{
+	color:white;
+	text-decoration: none !important;
+}
