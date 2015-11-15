@@ -7,6 +7,9 @@ a {
 h1, h2 {
     font-family: "Droid Sans", Helvetica, Arial,sans-serif;
 }
+h2 {
+    font-size: 20px;
+}
 .walmart-color{
 	 background-color:#007dc6;
 }
@@ -65,10 +68,10 @@ h1, h2 {
    color: #efefef;
 }
 .facebook {
-   background-color: #3b5998;
+    background-color: #3b5998;
 }
-a{
-	text-decoration: none !important;
+a {
+    text-decoration: none !important;
 }
 a:visited{
 	color:white;
