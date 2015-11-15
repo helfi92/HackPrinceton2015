@@ -1,6 +1,7 @@
  
     <div class="walmart-color">
             <div class="container">
+               
                 <h2 style="color:white;margin-top:10px">Design and Earn</h2>
                 <ul id="myTags">
                     <!-- Existing list items will be pre-added to the tags -->
@@ -31,14 +32,15 @@
 							<img ng-click="switchSection(1)" class="shirt" ng-src="{{imageShirt}}">
 							<div ng-show="shirtSection" style="margin-top:-120px;"><i style="margin-left:380px;" class="fa fa-arrow-left fa-4x"></i></div>
 						</div>
-							<!-- <div style="position:absolute;top:100px;width:100%;height:200px;left:0;">
-		                                                <img class="pants" src="http://i.walmartimages.com/i/p/00/71/66/05/11/0071660511934_Color_Black_SW_100X100.jpg">
-		                                        </div> -->
+						<div style="position:absolute;top:120px;width:100%;height:100px;left:0;">
+                                <img ng-click="switchSection(3)" class="pants" ng-src="{{imagePant}}">
+                            	<div ng-show="pantSection" style="margin-top:-80px;"><i style="margin-left:400px;" class="fa fa-arrow-left fa-4x"></i></div>
+                        </div>
 						<div  style="position:relative;width:100%;left:0;">
 							<img ng-click="switchSection(2)" class="shoe-left" ng-src="{{imageShoe}}">
 							<div ng-show="shoeSection" style="margin-top:-80px;"><i style="margin-left:400px;" class="fa fa-arrow-left fa-4x"></i></div>
 						</div>
-							
+
 					</div>
 						
 						<div class="container">
@@ -51,6 +53,8 @@
 	
 	<div style="max-height:600px;margin-top:10px;overflow-y:auto;background-color: #007dc6;border:5px solid #ffc120;" class="col-xs-6 text-center">
         <h1 style="color:white; font-family:'Lato',sans-serif;">Catalog</h1>
+        <img id="princeton-logo" class="animated flip"style="height: 50px;position: absolute;top: 0;margin-left: 191.5px;margin-top: 15px;" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/000/182/649/datas/original.png">
+    
             <div style="margin-top:10px;background-color:white;font-family:'Lato',sans-serif;border-color:color:#007dc6;"ng-repeat="item in list track by $index">
                 <img class="item" ng-click="selectItem($index)" ng-src="{{item.thumbnailImage}}">
                 <div style="padding: 10px 40px 0px 40px;">{{item.name}}</div>
