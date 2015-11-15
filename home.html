@@ -37,8 +37,9 @@
                             	<div ng-show="pantSection" style="margin-top:-80px;"><i style="margin-left:400px;" class="fa fa-arrow-left fa-4x"></i></div>
                         </div>
 						<div  style="position:relative;width:100%;left:0;">
-							<img ng-click="switchSection(2)" class="shoe-left" ng-src="{{imageShoe}}">
-							<div ng-show="shoeSection" style="margin-top:-80px;"><i style="margin-left:400px;" class="fa fa-arrow-left fa-4x"></i></div>
+							<span><img ng-click="switchSection(2)" class="shoe-left" ng-src="{{imageShoe}}"></span>
+							<span><img class="flip-image shoe-right" ng-src="{{imageShoe}}"></span>
+							<div ng-show="shoeSection" style="position:absolute;bottom: 30px;left:80px;"><i style="margin-left:400px;" class="fa fa-arrow-left fa-4x"></i></div>
 						</div>
 
 

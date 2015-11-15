@@ -38,6 +38,13 @@ h1, h2 {
     margin-top: -100px;
     margin-left: -100px;
 }
+.shoe-right{
+	height: 100px;
+    width: 70px;
+    
+    position: absolute;
+    bottom: 7px;
+}
 .grow { 
     transition: all .3s ease-in-out;
 }
@@ -70,4 +77,12 @@ a:visited{
 .btn-primary{
 	background-color:#007dc6;
 	border-color: #007dc6;
+}
+.flip-image{
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
