@@ -1,5 +1,5 @@
 app.factory("Auth",['$firebaseAuth','$rootScope',function($firebaseAuth,$rootScope){
-        var authRef = $firebaseAuth(new Firebase("https://flickering-heat-6138.firebaseio.com"));
+        var authRef = $firebaseAuth(new Firebase("https://blinding-fire-4.firebaseio.com"));
         // any time auth status updates, add the user data to scope
 	    var authData;
 	    authRef.$onAuth(function(authData){
