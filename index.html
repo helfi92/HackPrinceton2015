@@ -67,8 +67,8 @@
 				</div>
 
 	</div>
-	<div style="max-height:400px;margin-top:25px;overflow-y:auto;" class="col-xs-6 text-center">
-		<h1>Catalog</h1>
+	<div style="max-height:600px;margin-top:50px;overflow-y:auto;border:5px solid #ffc120" class="col-xs-6 text-center">
+		<h1 style="color:#007dc6;">Catalog</h1>
 		<div style="padding:10px;" ng-repeat="item in list track by $index">
 			<img ng-click="selectItem($index)" ng-src="{{item.thumbnailImage}}">
 			<div style="padding: 10px 40px 0px 40px;">{{item.name}}</div>
