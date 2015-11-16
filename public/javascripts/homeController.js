@@ -58,13 +58,26 @@ app.controller('homeController',['$scope', '$rootScope', '$timeout','$interval',
     		$scope.pantSection = true;
     	}
     }
-    $timeout(function(){
-		$("#myTags").tagit({
-	    	afterTagAdded: function(event, ui){
-	    		formatSearchTerms();
-	    	}
-	    });
-    },0)
+    
+    angular.element(document).ready(function () {
+        $timeout(function(){
+            angular.element("#myTags").tagit({
+            afterTagAdded: function(event, ui){
+                formatSearchTerms();
+            }
+         });
+        },500)
+        
+    });
+        
+   
+  //   $timeout(function(){
+		// $("#myTags").tagit({
+	 //    	afterTagAdded: function(event, ui){
+	 //    		formatSearchTerms();
+	 //    	}
+	 //    });
+  //   },0)
 	// $(document).ready(function() {
 	//     $("#myTags").tagit({
 	//     	afterTagAdded: function(event, ui){
